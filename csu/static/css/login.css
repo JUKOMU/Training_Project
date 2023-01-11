@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+}
+body {
+    background: url(../img/bg.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+    right: 0;
+    top: 0;
+    position:fixed;
+    height: 100%;
+    width: 600px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+select{
+    margin: 0 auto;
+    padding: 0;
+    position:fixed;
+    width: 105.2px;
+    height: 28.8px;
+    border-radius: 3px;
+    right:10%;
+    top: 51px;
+
+}
+option{
+    width: auto;
+    text-align: center;
+    border-radius: 3px;
+}
