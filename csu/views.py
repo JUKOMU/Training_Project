@@ -3,6 +3,7 @@ from csu import models
 from django.template import RequestContext
 # Create your views here.
 
+
 def get(request, s):
     return request.POST.get(s)
 

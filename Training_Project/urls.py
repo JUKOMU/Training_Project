@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from csu import views
 
+
 urlpatterns = [
     path('login/', views.login),
     path('login_qc/', views.login_qc),
