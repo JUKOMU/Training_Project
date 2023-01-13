@@ -5,6 +5,7 @@ from django.template import RequestContext
 
 def get(request, s):
     return request.POST.get(s)
+
 def login(request):
     if request.method == 'GET':
         return render(request, 'login.html', {'path': '../static/img/toQC.png'})
