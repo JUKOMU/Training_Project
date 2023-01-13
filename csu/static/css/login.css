@@ -5,6 +5,34 @@ body {
     background: url(../img/bg.png) no-repeat center;
     background-size: 100% 100%;
 }
+.logo{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    top: 50px;
+    left: 10%;
+    position: absolute;
+}
+.logo img{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    width: 246px;
+}
+.logo span{
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    height: 38px;
+    line-height: 38px;
+    top: 15px;
+    margin: 0 0 0 15px;
+    padding: 0 0 0 15px;
+    border-left: 1px solid white;
+    color: white;
+    font-size: 24px;
+    width: 150px;
+}
 
 .container{
     margin: 0 auto;
@@ -24,13 +52,31 @@ select{
     position:fixed;
     width: 105.2px;
     height: 28.8px;
-    border-radius: 3px;
+    border-radius: 5px;
     right:10%;
     top: 51px;
-
+    background: white;
 }
 option{
     width: auto;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 4px;
+}
+
+.login{
+    width: 416px;
+    max-height: 531px;
+    min-height: 456px;
+    position: relative;
+    background: white;
+    border-radius: 4px;
+    margin: 20% auto 0;
+}
+
+.QCtoPW a{
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 4px;
 }
