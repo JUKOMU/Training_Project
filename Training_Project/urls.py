@@ -21,5 +21,6 @@ from csu import views
 urlpatterns = [
     path('login/', views.login),
     path('login_qc/', views.login_qc),
+    path('login_DC/', views.login_dc),
 ]
 

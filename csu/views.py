@@ -14,4 +14,7 @@ def login(request):
         password = get(request, 'password')
 
 def login_qc(request):
-    return render(request, 'login.html', {'path': '../static/img/toPW.png'})
+    return render(request, 'login_qc.html', {'path': '../static/img/toPW.png'})
+
+def login_dc(request):
+    return render(request, 'login_dc.html')
