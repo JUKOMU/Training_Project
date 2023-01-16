@@ -25,38 +25,63 @@
         <option value="en">English</option>
     </select>
     <!-- 登录区 -->
-    <div class="login">
-        <!--
-        <div class="account">
-            <div class="username">
-                <span><img src="{% static 'img/user.png' %}"></span>
-                <input type="text" name="username" id="username" placeholder="请输入学号/工号" title="请输入学号/工号">
-            </div>
-            <div class="password">
-                <span><img src="{% static 'img/password.png' %}"></span>
-                <input type="password" name="password" id="password" placeholder="请输入密码" title="请输入密码">
-            </div>
-            <div class="rememberme">
-                <input type="checkbox" name="rememberme" id="rememberme" value="true">
-                <span>七天免登录</span>
-            </div>
-        </div>
-        -->
-        <!-- 登录按钮 -->
-        <!--
-        <div class="btn">
-            <input type="submit" name="login_button" id="login_button" value="登录" style="color:white;background-color: #2368de">
-        </div>
-        -->
+    <div class="login" style="text-align: center">
+        <a href="/login/" class="switch"><img class="switch" src="{% static 'img/toPW.png' %}"></a>
         <div class="login_QC">
-            <img src={% static 'img/QC.png' %}>
-            <span>中南e行APP扫码登录</span>
+            <img src="{% static 'img/QC.png' %}">
         </div>
-        <div class="PWtoQC">
-            <a href="/login/">
-                <img src={% static 'img/toPW.png' %}>
-            </a>
+        <div style="text-align: center;position: relative;display: inline-block;margin-top: 40px;">
+            <span style="text-align: center;position: relative;display: inline-block;">中南e行APP扫码登录</span>
         </div>
+        <!--
+        <section class="main">
+            <div class="head">
+                <span style="border-bottom: 2px solid #2B6CDB;"><a href="/login/" style="text-decoration: none;color: #2B6CDB">账号登录</a></span>
+                <span style="border: 0;"><a href="/login_DC/" style="text-decoration: none;color: #34363E;">动态码登录</a> </span>
+            </div>
+            <div class="login_PC">
+                <div class="pwdlogindiv">
+                    <form action="/login/" method="post">
+                        {% csrf_token %}
+                        <div class="account">
+                            <div class="username">
+                                <span class="icon-bar"><img src="{% static 'img/user.png' %}"> </span>
+                                <input type="text" name="username" placeholder="请输入学号/工号" title="请输入学号/工号" value="">
+                            </div>
+                            <div class="password">
+                                <span class="icon-bar"><img src="{% static 'img/password.png' %}"> </span>
+                                <input type="password" name="password"  placeholder="请输入密码" title="请输入密码">
+                            </div>
+                            <div class="rememberMe">
+                                <input type="checkbox" name="rememberMe" id="rememberMe" value="true" style="width:15px;margin-right:5px;">
+                                <span>7天免登录</span>
+                            </div>
+                        </div>
+                        <div class="bnt" style="margin-top: 30px;">
+                            <input type="submit" value="登录" style="width: 100%;height: 50px;background: #2368de;border-radius: 4px;display: block;color: #fff;text-align: center;line-height: 50px;font-size: 18px;text-decoration: none;letter-spacing: 12px;">
+                        </div>
+                    </form>
+                </div>
+                <div class="help">
+                    <a title="通过手机短信、邮件方式找回密码" style="float: left;color: #73757E">忘记密码</a>
+                    <div class="activation-account">
+                        <a class="activation-account" style="float: right;color: #0c4af9;">账号激活</a>
+                    </div>
+                </div>
+                <div class="help">
+                    <a title="无法通过手机短信、邮件方式找回密码" style="float: left;color: #73757E">账号申诉</a>
+                    <div class="activation-account">
+                        <a class="activation-account" style="float: right;color: #0c4af9;">账号申请</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <p style="color: #0c4af9;min-width: 100px;float: left;margin-right: 10px">其他登录方式</p>
+            <div class="ways"><img src="{% static 'img/QQ.png' %}"></div>
+            <div class="ways"><img src="{% static 'img/VW.png' %}"></div>
+        </div>
+        -->
     </div>
 </div>
 

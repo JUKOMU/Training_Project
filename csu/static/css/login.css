@@ -121,7 +121,15 @@ option{
     border: 0;
     vertical-align: baseline;
 }
-
+.captcha-img{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    text-align: center;
+    width: 86px;
+    height: 30px;
+}
 .username{
     border-width: 1px;
     border-style: solid;
@@ -134,6 +142,25 @@ option{
 }
 
 .username input{
+    width: 70%;
+    border: none;
+    height: 48px;
+    margin: 0 0 0 48px;
+    outline: none;
+    padding: 1px 2px;
+    border: 0;
+}
+.captcha{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-radius: 4px;
+    height: 48px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.captcha input{
     width: 70%;
     border: none;
     height: 48px;
@@ -197,4 +224,25 @@ option{
 }
 .ways img{
     width: 32px;
+}
+
+.switch{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.login_QC{
+    position: relative;
+    top:50px;
+    text-align: center;
+}
+.login_QC img{
+    margin: 50px auto 10px;
+    width: 235px;
+    height: 235px;
 }
