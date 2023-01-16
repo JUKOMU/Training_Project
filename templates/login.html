@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>统一身份验证平台</title>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <script type="text/javascript" src="{% static 'js/login.js' %}"></script>
 </head>
 <body>
 
@@ -34,24 +35,25 @@
             </div>
             <div class="login_PC">
                 <div class="pwdlogindiv">
-                    <form action="/login/" method="post">
+                    <form action="/login/" method="post" onsubmit="return Judge()">
                         {% csrf_token %}
                         <div class="account">
                             <div class="username">
                                 <span class="icon-bar"><img src="{% static 'img/user.png' %}"> </span>
-                                <input type="text" name="username" placeholder="请输入学号/工号" title="请输入学号/工号" value="">
+                                <input type="text" name="username" placeholder="请输入学号/工号" title="请输入学号/工号" id="uname">
                             </div>
                             <div class="password">
                                 <span class="icon-bar"><img src="{% static 'img/password.png' %}"> </span>
-                                <input type="password" name="password"  placeholder="请输入密码" title="请输入密码">
+                                <input type="password" name="password"  placeholder="请输入密码" title="请输入密码" id="password">
                             </div>
                             <div class="rememberMe">
                                 <input type="checkbox" name="rememberMe" id="rememberMe" value="true" style="width:15px;margin-right:5px;">
                                 <span>7天免登录</span>
                             </div>
                         </div>
+                        <span id="errMsg" style="display: block;margin-bottom: 0;position: absolute;overflow: visible;color: red">{{ n }}</span>
                         <div class="bnt" style="margin-top: 30px;">
-                            <input type="submit" value="登录" style="width: 100%;height: 50px;background: #2368de;border-radius: 4px;display: block;color: #fff;text-align: center;line-height: 50px;font-size: 18px;text-decoration: none;letter-spacing: 12px;">
+                            <input type="submit" style="width: 100%;height: 50px;background: #2368de;border-radius: 4px;display: block;color: #fff;text-align: center;line-height: 50px;font-size: 18px;text-decoration: none;letter-spacing: 12px;">
                         </div>
                     </form>
                 </div>
@@ -75,38 +77,6 @@
             <div class="ways"><img src="{% static 'img/VW.png' %}"></div>
         </div>
     </div>
-    <!--
-    <div class="login">
-        <section class="main">
-            <span><a href="/login/" style="color: #2B6CDB;">  账号登录  </a></span>
-            <span><a href="/login_DC/" style="color: #34363E;text-decoration:none;">动态码登录</a></span>
-            <div class="account">
-                <div class="username">
-                    <span><img src="{% static 'img/user.png' %}"></span>
-                    <input type="text" name="username" id="username" placeholder="请输入学号/工号" title="请输入学号/工号">
-                </div>
-                <div class="password">
-                    <span><img src="{% static 'img/password.png' %}"></span>
-                    <input type="password" name="password" id="password" placeholder="请输入密码" title="请输入密码">
-                </div>
-                <div class="rememberme">
-                    <input type="checkbox" name="rememberme" id="rememberme" value="true">
-                    <span>七天免登录</span>
-                </div>
-            </div>
-            <!-- 登录按钮
-            <div class="btn">
-                <input type="submit" name="login_button" id="login_button" value="登录" style="color:white;background-color: #2368de">
-            </div>
-        </section>
-
-        <div class="PWtoQC">
-            <a href="/login_qc/">
-                <img src={% static 'img/toQC.png' %}>
-            </a>
-        </div>
-    </div>
-    -->
 </div>
 
 </body>
