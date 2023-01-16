@@ -27,5 +27,5 @@ python manage.py runserver xxxx
 * ### 浏览器输入http://127.0.0.1:8000/login/  (已预先设置了测试账号，用户名：me，密码：1)
 ![database](https://github.com/JUKOMU/Training_Project/blob/master/photos/login1.png)
 
-* ### 浏览器输入http://127.0.0.1:8000/register/，进入账号注册，注册成功即可使用注册账号登录(主页未完成)
+* ### 浏览器输入http://127.0.0.1:8000/register/ ，进入账号注册，注册成功即可使用注册账号登录(主页未完成)
 ![database](https://github.com/JUKOMU/Training_Project/blob/master/photos/register.png)
