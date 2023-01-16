@@ -73,84 +73,110 @@ option{
     margin: 20% auto 0;
     padding: 0;
 }
-.account{
-
-}
-.username{
-    position: absolute;
-    display: inline;
-    left: 76px;
-    margin: 20px 0 0;
-    width:340px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #e8e8e8;
-    border-radius: 4px;
-    height: 48px;
-}
-.password{
-    position: absolute;
-    top: 25%;
-    width:340px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #e8e8e8;
-    border-radius: 4px;
-    height: 48px;
-    margin: 0 auto;
-}
-.PWtoQC a{
-    margin: 0 auto;
-    top: 0;
-    right: 0;
-    position: absolute;
-    border-radius: 4px;
-}
-.login_QC{
-    text-align: center;
-}
-.login_QC img{
-    padding: 50px;
-    padding-bottom: 0;
-    border: 0;
-    vertical-align: baseline;
-    margin: 50px auto 10px;
-    width: 235px;
-    height: 235px;
-
-}
-.login_QC span{
-    text-align: center;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    overflow-wrap: break-word;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-}
 
 .main{
     width: calc(100% - 76px);
     padding:22px 38px;
     min-height: 360px;
     margin: 0;
-
+    display: block
 }
 
-.main span{
+.head {
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+    font-size: 12px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.head span{
+    position: relative;
+    text-align: center;
     width: 50%;
-    border-bottom: 1px solid #2B6CDB;
-    padding: 0;
-    margin: 0;
+    line-height: 20px;
+    padding: 8px 0;
+    font-size: 18px;
     display: inline-block;
     float: left;
 }
-section{
-    display: block
+
+.account{
+    border-radius: 5px;
+    background: white;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
+
+
+.icon-bar{
+    position: absolute;
+}
+.icon-bar img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.username{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-radius: 4px;
+    height: 48px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.username input{
+    width: 70%;
+    border: none;
+    height: 48px;
+    margin: 0 0 0 48px;
+    outline: none;
+    padding: 1px 2px;
+    border: 0;
+}
+
+.password{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-radius: 4px;
+    height: 48px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.password input{
+    width: 70%;
+    border: none;
+    height: 48px;
+    margin: 0 0 0 48px;
+    outline: none;
+    padding: 1px 2px;
+    border: 0;
+}
+
+.rememberMe{
+    position: relative;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.help{
+    position: relative;
+    margin: 12px 0 0;
+    height: 26px;
+    border: 0;
+    padding: 0;
+}
+
 .footer{
     width: calc(100% - 64px);
     position: absolute;
@@ -162,4 +188,13 @@ section{
     display: flex;
     align-items: Center;
     padding: 0 32px;
+}
+.ways{
+    width: 60px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.ways img{
+    width: 32px;
 }
