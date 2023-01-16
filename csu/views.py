@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, HttpResponse, redirect, HttpResponseRedirect
 from csu import models
 from django.template import RequestContext
 # Create your views here.
@@ -37,7 +37,7 @@ def login(request):
         for obj in data_list:
             if username == obj.number:
                 if password == obj.password:
-                    return render(request, "index.html")
+                    return HttpResponseRedirect('/index/?message=pass')
         return render(request, "login.html", {"n": "您提供的用户名或者密码有误"})
 
 
@@ -47,3 +47,7 @@ def login_qc(request):
 def login_dc(request):
     return render(request, 'login_dc.html')
 
+def index(request):
+    if request.GET.get('message') == 'pass':
+        return render(request, 'index.html')
+    return render(request, 'login.html')
