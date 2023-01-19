@@ -27,7 +27,7 @@ python manage.py runserver xxxx
 
 <img src="photos/run.png">
 
-* ### 浏览器输入http://127.0.0.1:8000/login/  (已预先设置了测试账号，用户名：me，密码：1)
+* ### 浏览器输入http://127.0.0.1:xxxx/login/  (这里图片以8000为例。已预先设置了测试账号，用户名：me，密码：1)
 
 <img src="photos/login1.png">
 
