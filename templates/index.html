@@ -29,9 +29,34 @@
     <img src="{% static 'img/banner.png' %}">
 </div>
 <div class="main-box">
-    <div class="left-box">12313231</div>
+    <div class="left-box">
+        <div class="user">
+            <div class="user-pic">
+                <img src="{% static 'img/-pic.png' %}" style="width: 82px;height: 82px;">
+            </div>
+            <div class="user-name">
+                {{ username }}
+            </div>
+            <div class="address-select">
+                <select id="address">
+                    <option class="address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;空闲</option>
+                    <option class="address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作</option>
+                    <option class="address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上课</option>
+                    <option class="address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开会</option>
+                </select>
+            </div>
+            <div class="user-handle">
+                <a>个人信息</a>
+                <span>|</span>
+                <a>退出登录</a>
+            </div>
+        </div>
+        <div class="signal-login"></div>
+        <div class="csu-inf"></div>
+        <div class="school-notice"></div>
+    </div>
     <div class="middle-box"></div>
-    <div class="right-box">111111111111</div>
+    <div class="right-box"></div>
 </div>
 <div class="footer-box"></div>
 </body>

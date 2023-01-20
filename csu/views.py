@@ -37,7 +37,7 @@ def login(request):
         for obj in data_list:
             if username == obj.number:
                 if password == obj.password:
-                    return HttpResponseRedirect('/index/?message=pass')
+                    return HttpResponseRedirect('/index/?message=pass'+username)
         return render(request, "login.html", {"n": "您提供的用户名或者密码有误"})
 
 
@@ -48,6 +48,7 @@ def login_dc(request):
     return render(request, 'login_dc.html')
 
 def index(request):
-    if request.GET.get('message') == 'pass':
-        return render(request, 'index.html')
+    st = request.GET.get('message')
+    if st[0:4] == 'pass':
+        return render(request, 'index.html', {'username': st[4:]})
     return render(request, 'login.html')

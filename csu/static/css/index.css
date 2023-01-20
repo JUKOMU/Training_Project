@@ -5,6 +5,10 @@ html{
     overflow-y: auto;
     overflow-x: hidden;
 }
+body{
+    z-index: 0;
+    background-color: #d4d5e0;
+}
 
 .top-box{
     z-index: 9999;
@@ -76,22 +80,89 @@ html{
 }
 
 .main-box{
+    z-index: 2;
     margin: 0;
-    padding: 0;
+    padding: 0 250px;
     border: 0;
 }
 .left-box{
-    margin: 0;
+    z-index: 3;
+    margin: -105px 0 0;
     padding: 0;
-    left: 250px;
     position: relative;
+    width: 230px;
+    max-width: 230px;
+    left:0;
+    float: left;
 }
-.middle-box{}
-.right-box{
+.user{
+    width: 230px;
+    height: 195px;
+    margin: 0 0 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.4);
+}
+.user-name{
+    text-align: center;
+    color: #3E3E3E;
+    font-size: 14px;
+    margin: 15px 0 0;
+}
+.address-select select{
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-color: #35ca3a;
+    border: none;
+    margin: 10px 0 0;
+}
+.address-select option{
+    color: #444;
+    background-color: white;
+    height: 20px;
+    text-align: left;
+}
+.user-handle{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.user-handle a{
+    display: inline-block;
+    padding: 0 5px;
+    color: #3E3E3E;
+    font-size: 12px;
+}
+.user-handle span{
     margin: 0;
     padding: 0;
-    left: -20px;
+    width: 1px;
+    height: 11px;
+    color: #3E3E3E;
+}
+.middle-box{
+    z-index: 3;
+    margin: 0;
+    padding: 0;
     position: relative;
+    width: calc(100% - 460px);
+    max-width: calc(100% - 460px);
+    float: left;
+}
+.right-box{
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 230px;
+    max-width: 230px;
+    right: 0;
+    float: left;
 }
 
 .footer-box{
