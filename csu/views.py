@@ -1,10 +1,15 @@
 from django.shortcuts import render, HttpResponse, redirect, HttpResponseRedirect
 from csu import models
 from django.template import RequestContext
+
+
 # Create your views here.
+
+
 
 def get(request, s):
     return request.POST.get(s)
+
 
 def register(request):
     if request.method == "GET":
@@ -25,6 +30,7 @@ def register(request):
         models.User.objects.create(number=u, password=p1)
         return render(request, "register.html", {"n1": "注册成功!"})
 
+
 def login(request):
     if request.method == 'GET':
         return render(request, 'login.html', {'path': '../static/img/toQC.png'})
@@ -37,15 +43,28 @@ def login(request):
         for obj in data_list:
             if username == obj.number:
                 if password == obj.password:
-                    return HttpResponseRedirect('/index/?message=pass'+username)
+                    items = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+                    random.shuffle(items)
+                    i_str = ""
+                    for i in items:
+                        i_str += i
+                    if models.PasswordRule.objects.filter(id=1).count() == 0:
+                        models.PasswordRule.objects.create(rule=i_str)
+                    else:
+                        models.PasswordRule.objects.filter(id=1).update(rule=i_str)
+                    b_str = "pass" + username
+
+                    return HttpResponseRedirect('/index/?message=pass' + username)
         return render(request, "login.html", {"n": "您提供的用户名或者密码有误"})
 
 
 def login_qc(request):
     return render(request, 'login_qc.html', {'path': '../static/img/toPW.png'})
 
+
 def login_dc(request):
     return render(request, 'login_dc.html')
+
 
 def index(request):
     st = request.GET.get('message')
