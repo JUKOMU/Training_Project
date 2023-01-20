@@ -186,11 +186,30 @@ body{
     z-index: 3;
     margin: 0;
     padding: 0;
-    position: relative;
     width: 230px;
     max-width: 230px;
-    right: 0;
-    float: left;
+    right: 231px;
+    float: right;
+    position: absolute;
+
+}
+.schedule{
+    width: 230px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.app{
+    width: 230px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.money{
+    width: 230px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
 }
 
 .footer-box{
