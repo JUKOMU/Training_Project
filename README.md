@@ -1,5 +1,23 @@
 # Training_Project
 
+## 目录结构
+```
+Training_Project
+├─csu
+│  ├─migrations
+│  │  └─__pycache__
+│  ├─static
+│  │  ├─css
+│  │  ├─img
+│  │  └─js
+│  └─__pycache__
+├─photos
+├─templates
+├─Training_Project
+│  └─__pycache__
+└─__pycache__
+```
+
 ## 实现的功能
 * ### 较为美观的界面,尽可能仿照了官网,简化了一部分页面结构
 * ### 注册和登录

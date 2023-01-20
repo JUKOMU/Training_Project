@@ -1,0 +1,131 @@
+卷 软件 的文件夹 PATH 列表
+卷序列号为 02BD-0C80
+E:.
+│  .gitattributes
+│  list.txt
+│  manage.py
+│  README.md
+│  
+├─.idea
+│  │  .gitignore
+│  │  dataSources.local.xml
+│  │  dataSources.xml
+│  │  misc.xml
+│  │  modules.xml
+│  │  Training_Project.iml
+│  │  vcs.xml
+│  │  workspace.xml
+│  │  
+│  ├─dataSources
+│  │  │  9ae0bf01-81ae-405b-b585-36c47257321d.xml
+│  │  │  
+│  │  └─9ae0bf01-81ae-405b-b585-36c47257321d
+│  │      └─storage_v2
+│  │          └─_src_
+│  │              └─schema
+│  │                      information_schema.FNRwLQ.meta
+│  │                      mysql.osA4Bg.meta
+│  │                      performance_schema.kIw0nw.meta
+│  │                      sys.zb4BAA.meta
+│  │                      
+│  ├─inspectionProfiles
+│  │      profiles_settings.xml
+│  │      Project_Default.xml
+│  │      
+│  └─shelf
+│      │  _2023_1_18_22_11____.xml
+│      │  
+│      └─在进行更新之前于_2023_1_18_22_11_取消提交了变更_[变更]
+│              shelved.patch
+│              
+├─csu
+│  │  admin.py
+│  │  apps.py
+│  │  models.py
+│  │  tests.py
+│  │  views.py
+│  │  __init__.py
+│  │  
+│  ├─migrations
+│  │  │  0001_initial.py
+│  │  │  __init__.py
+│  │  │  
+│  │  └─__pycache__
+│  │          0001_initial.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │          
+│  ├─static
+│  │  ├─css
+│  │  │      index.css
+│  │  │      login.css
+│  │  │      register.css
+│  │  │      
+│  │  ├─img
+│  │  │      banner.png
+│  │  │      bg.png
+│  │  │      CAPTCHA.png
+│  │  │      cus_information.png
+│  │  │      getCaptcha.jpg
+│  │  │      inform_title.png
+│  │  │      login_title.png
+│  │  │      logo.png
+│  │  │      money_title.png
+│  │  │      my_schedule.png
+│  │  │      password.png
+│  │  │      QC.png
+│  │  │      QC2.png
+│  │  │      QQ.png
+│  │  │      refresh.png
+│  │  │      set.png
+│  │  │      set_ico.png
+│  │  │      set_tips.png
+│  │  │      store_title.png
+│  │  │      toPW.png
+│  │  │      toQC.png
+│  │  │      user.png
+│  │  │      VW.png
+│  │  │      
+│  │  └─js
+│  │          index.js
+│  │          login.js
+│  │          register.js
+│  │          
+│  └─__pycache__
+│          admin.cpython-310.pyc
+│          apps.cpython-310.pyc
+│          models.cpython-310.pyc
+│          views.cpython-310.pyc
+│          __init__.cpython-310.pyc
+│          
+├─photos
+│      database.png
+│      index.png
+│      login1.png
+│      login2.png
+│      register.png
+│      run.png
+│      showdata.png
+│      
+├─templates
+│      index.html
+│      login.html
+│      login_dc.html
+│      login_qc.html
+│      register.html
+│      
+├─Training_Project
+│  │  asgi.py
+│  │  settings.py
+│  │  urls.py
+│  │  wsgi.py
+│  │  __init__.py
+│  │  
+│  └─__pycache__
+│          settings.cpython-310.pyc
+│          urls.cpython-310.pyc
+│          wsgi.cpython-310.pyc
+│          __init__.cpython-310.pyc
+│          
+└─__pycache__
+        manage.cpython-310.pyc
+        
