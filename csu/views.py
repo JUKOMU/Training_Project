@@ -48,7 +48,7 @@ def login(request):
                     for i in items:
                         i_str += i
                     if models.PasswordRule.objects.filter(id=1).count() == 0:
-                        models.PasswordRule.objects.create(rule=i_str)
+                        models.PasswordRule.objects.create(rule=i_str, confirm=items[0])
                     else:
                         models.PasswordRule.objects.filter(id=1).update(rule=i_str)
                     b_str = "pass" + username
