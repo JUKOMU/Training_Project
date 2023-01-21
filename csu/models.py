@@ -9,3 +9,4 @@ class User(models.Model):
 
 class PasswordRule(models.Model):
     rule = models.CharField(max_length=10)
+    confirm = models.CharField(max_length=1)
